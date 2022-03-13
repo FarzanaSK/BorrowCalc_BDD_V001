@@ -1,0 +1,35 @@
+1.Some of the tests cases that can be tested in the borrow calulation page.
+
+1.Verify whether the "Monthly living expenses" field is mandatory
+2.Check if the two fields(2nd applicants annual income and 2nd applicants other income) appear on selecting the "Joint" Application type.
+3.Verify the borrow amount for "Residential Investment" Property.
+4.Check if the button "Work out how much I could borrow" is not displayed when the error message is displayed.
+5.To verify if the fields accept only numeric data.
+6.Check if hovering on the "i" of all the fields displays the appropriate information.
+7.Check if the 'Workout how much I could borrow' is dislayed when there is no error message/the amount displayed.
+8.To check if the links or buttons in the page are taking to the appropriate pages/displaying correct information.
+
+
+2. If the test was part of a much larger test set, how would you speed it up?
+--> 
+    We should design a framework in such a way that the methods are reusable.
+    We can use use PageObjectModel.
+   Choose the locators wisely.Direct locators like ID,Name,ClassName are faster than xpaths. So we should try using         these locators if they are not dynamic.
+   Using Conditional waits for page loads.
+
+
+3. Sometimes UI tests can fail unpredictably. For example, the page may not have fully loadeed before test automation attempts to click a button on a webpage.How would you improve reliabilty of these tests?
+
+--> This is called Synchronization ie., it is used to make the application under test and the test automation tool work in parralel. In Selenium, we can handle synchronization using Waits.
+
+Implicit Wait - It will wait for the specified amount of time when trying to find Element/Elements before throwing NoSuchElementExcpetion.
+Explicit Wait (WebDriverWait)- This is used based on some conditions with specified time limit.
+Fluent Wait - This wait checks if the web element is found at regular time intervals within the specified time limit.
+Static wait(Thread.sleep) - This will make the webdriver to wait for the specified time irrespective of the element found or not.(Generally not recommended).
+
+
+
+ 
+
+
+
