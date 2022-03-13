@@ -10,6 +10,3 @@ Here the feature file is mapped to the corresponding step defnition file. All ot
  This is the java implementation layer where the test case steps will have their corresponding java methods.
 
 The test cases are run from the runner file.
-
-
-Feature File : 
